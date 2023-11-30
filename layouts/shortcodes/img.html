@@ -1,0 +1,10 @@
+<!-- image -->
+<img 
+    {{ with .Get "src" }}src="{{ . }}"{{ end }}
+    {{ with .Get "style" }}style="{{ . | safeCSS }}"{{ end }}
+    {{ with .Get "class" }}class="{{ . }}"{{ end }}
+    {{ with .Get "width" }}width="{{ . }}"{{ end }}
+    {{ with .Get "height" }}height="{{ . }}"{{ end }}
+    {{ with .Get "alt" }}alt="{{ . }}"{{ end }}
+/>
+<!-- image -->

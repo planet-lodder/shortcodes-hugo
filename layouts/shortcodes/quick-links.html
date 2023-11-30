@@ -1,0 +1,51 @@
+<style>
+  .quick-links {
+    text-align: center;
+  }
+  .quick-links a {
+    margin: 0 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .quick-links a img {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    padding: 2px;
+    margin: 0 auto;
+    display: block;
+  }
+  .quick-links a .title {
+    display: block;
+    font-size: smaller;
+  }
+  .rounded img {
+    border-radius: 50%;
+  }
+</style>
+<div class="quick-links rounded">
+  <!-- Contents -->
+  {{ with .Inner }} {{ . }} {{ else }}
+  <!-- Get links to display for the supplied param -->
+  <!--
+  {{ $sections := .Get 0 }}
+  {{ $sections := $sections | default (index .Site.Params.About "quick-links") }}
+  -->
+  <!-- Render each section -->
+  {{ range $section := $sections }}
+  <!-- Section Title -->
+  {{ with $section.title }}
+  <h3>{{.}}</h3>
+  {{ end }}
+  <!-- Section Links -->
+  {{ range $link := $section.links }}
+  <!-- Quick Link -->
+  <a href="{{ $link.href }}" target="_blank">
+    <img src="{{ $link.icon }}" />
+    <span class="title">{{ $link.label }}</span>
+  </a>
+  {{ end }}
+  <!-- Section End -->
+  {{ end }} {{ end }}
+</div>
