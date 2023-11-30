@@ -1,0 +1,7 @@
+# Explicitly ignore known cache dirs
+.task/
+temp/
+public/
+resources/
+**/.obsidian
+*.lock

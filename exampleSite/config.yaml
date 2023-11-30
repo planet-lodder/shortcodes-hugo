@@ -1,0 +1,41 @@
+title: Example Site
+baseURL: ""
+theme:
+  github.com/CaiJimmy/hugo-theme-stack
+  #- github.com/adityatelange/hugo-PaperMod
+  #- github.com/Club404/theme
+  #- github.com/theNewDynamic/gohugo-theme-ananke
+  #- github.com/panr/hugo-theme-terminal
+
+menu:
+  main:
+    - identifier: about
+      name: About me
+      url: /about/
+      weight: 10
+    - identifier: posts
+      name: Blog posts
+      url: /posts/
+      weight: 20
+
+params:
+  # About page metadata
+  about:
+    quick-links:
+      - title: Profile, portfolio & contact details
+        links:
+          - label: LinkedIn
+            icon: /images/logo-linkedin.webp
+            href: https://www.linkedin.com/in/johnathan-lodder-4430b010/
+          - label: GitHub
+            icon: /images/logo-github.png
+            href: https://github.com/orgs/planet-lodder/repositories
+          - label: Twitter
+            icon: /images/logo-twitter.png
+            href: https://twitter.com/JohnnyBeCoding
+
+
+# Add the shortcodes as a hugo module
+module:
+  imports:
+    - path: github.com/planet-lodder/shortcodes-hugo

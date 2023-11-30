@@ -1,0 +1,4 @@
+github.com/CaiJimmy/hugo-theme-stack v2.6.0+incompatible h1:HOf88geWucQwmTmNCFgHNidVTXjv9jLz3UA72gyFQTE=
+github.com/CaiJimmy/hugo-theme-stack v2.6.0+incompatible/go.mod h1:Tacngkxf7u2kfufDzxoX7yqktykqc/Vi1LwJOHGE6Nw=
+github.com/planet-lodder/shortcodes-hugo v0.0.0-20231130105305-b9e3bba3c3b4 h1:/ClE8idsk1xutyWmlYOmKZ6LaB/hAU/yY2R6+JyFvSQ=
+github.com/planet-lodder/shortcodes-hugo v0.0.0-20231130105305-b9e3bba3c3b4/go.mod h1:Z/xoXExneerGfUDLHWDVpxDvXnk4mj019CbpAKaUws0=
